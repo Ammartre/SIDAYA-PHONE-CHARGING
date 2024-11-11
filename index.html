@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIDAYA CHARGING</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;
+    0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">SIDAYA<span>CHARGING</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i>></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i>></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i>></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Ayoo Cas Handphone Dengan <span>SIDAYA</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+          dolor.
+        </p>
+        <a href="#" class="cta">Cas Sekarang</a>
+      </main>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- About Section Start-->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Harus SIDAYA</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+            iusto qui repellendus neque? Ipsum, eligendi!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facilis consectetur quam debitis minus natus officia non.
+            Aspernatur, architecto voluptates!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section End-->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        incidunt mollitia tempore. Ab, hic a?
+      </p>
+
+      <!-- Locker System Start -->
+      <div class="locker-container">
+        <div class="locker-grid">
+          <!-- Row 1 -->
+          <div class="locker-row">
+            <div class="locker available" data-id="1" onclick="selectLocker(1)">
+              <h3>Locker 1</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+            <div class="locker available" data-id="2" onclick="selectLocker(2)">
+              <h3>Locker 2</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="locker-row">
+            <div class="locker available" data-id="3" onclick="selectLocker(3)">
+              <h3>Locker 3</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+            <div class="locker available" data-id="4" onclick="selectLocker(4)">
+              <h3>Locker 4</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="locker-row">
+            <div class="locker available" data-id="5" onclick="selectLocker(5)">
+              <h3>Locker 5</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+            <div class="locker available" data-id="6" onclick="selectLocker(6)">
+              <h3>Locker 6</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+          </div>
+          <!-- Row 5 -->
+          <div class="locker-row">
+            <div class="locker available" data-id="7" onclick="selectLocker(7)">
+              <h3>Locker 7</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+            <div class="locker available" data-id="8" onclick="selectLocker(8)">
+              <h3>Locker 8</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+          </div>
+          <!-- Row 6 -->
+          <div class="locker-row">
+            <div class="locker available" data-id="9" onclick="selectLocker(9)">
+              <h3>Locker 9</h3>
+              <div class="status-indicator"></div>
+              <p>Available</p>
+            </div>
+            <div class="locker occupied">
+              <h3>Locker 10</h3>
+              <div class="status-indicator"></div>
+              <p>Occupied</p>
+            </div>
+          </div>
+        </div>
+        <!-- Legend -->
+        <div class="locker-legend">
+          <div class="legend-item">
+            <div class="status-dot available"></div>
+            <span>Available</span>
+          </div>
+          <div class="legend-item">
+            <div class="status-dot occupied"></div>
+            <span>Occupied</span>
+          </div>
+        </div>
+      </div>
+      <!-- Locker System End -->
+    </section>
+    <!-- Menu Section End-->
+
+    <!-- Kontak Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+        asperiores?
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7978.115611180717!2d104.048457!3d1.118721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98921856ddfab%3A0xf9d9fc65ca00c9d!2sPoliteknik%20Negeri%20Batam!5e0!3m2!1sid!2sid!4v1731324860573!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Section end -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">SIDAYA</a>. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascipt -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
